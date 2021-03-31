@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap");
+
+body, html{
+    margin: 0;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-color:  hsl(0, 100%, 74%);
+    width: 100%;
+    height: 100%;
+    Font-size: 16px;
+    color: white;
+    overflow: auto;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position:fixed;
+    font-family: "Poppins";
+    overflow:inherit;
+}
+
+.containerText{
+    display: flex;
+    align-items: center;
+    max-width: 50vw;
+}
+
+.text{
+    margin-left: 10vw;
+    margin-right: 0vw;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.containerElements{
+    display: flex;
+    align-items: center;
+    max-width: 50vw;
+}
+
+.elements{
+    margin-right: 10rem;
+}
+.buttonTry{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    box-shadow: 0px 8px 0px hsla(249, 10%, 26%, 30%);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.endSentence{
+    font-weight: 200;
+}
+
+.form{
+    background-color: white;
+    border-radius: 0.6rem;
+    box-shadow: 0px 8px 0px hsla(249, 10%, 26%, 30%);
+    
+}
+
+form{
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+input[type=text], input[type=password],input[type=mail] {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.25rem 25px;
+    margin: 1rem 2rem;
+    width: 28rem;
+    font-weight: 600;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=mail]:focus{
+    outline-color: hsl(248, 32%, 49%);
+}
+
+input[type=submit] {
+    padding: 1rem 20px;
+    margin: 0.5rem 2rem;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0px 5px 0px hsla(154, 56%, 42%, 80%);
+    letter-spacing: 0.1rem;
+}
+
+input[type=submit]:hover{
+    background-color: hsl(153, 53%, 73%);
+}
+
+input[type=submit]:focus{
+    outline: none;
+}
+
+.terms{
+    color: hsl(246, 25%, 77%);
+    font-size: 0.70rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.termsLink{
+    color: hsl(0, 100%, 74%);
+}
+
+.attribution {
+    font-size: 11px;
+    position:absolute;
+    width:300px;
+    bottom:0px;
+    left:50%;
+    margin-left:-150px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 1280px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+        position: inherit;
+        font-family: "Poppins";
+    }
+
+    .containerText{
+        max-width: 100vw;
+    }
+    
+    .text{
+        text-align: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    
+    .containerElements{
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .elements{
+        margin-right: 10vw;
+        margin-left: 10vw;
+        margin-bottom: 5rem;
+    }
+
+    .attribution {
+        position:relative;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    input[type=text], input[type=password],input[type=mail] {
+        width: 60vw;
+    }
+
+}

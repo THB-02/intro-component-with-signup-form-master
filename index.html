@@ -31,26 +31,29 @@
 
          
 
-          <form action="">
-              
-           
-          
-          
+          <form id="form">
+            
             <input type="text" id="fname" name="firstname" placeholder="First Name">
-        
+            <p class="textError" id="fNameError">First Name cannot be empty</p>
+            
             <input type="text" id="lname" name="lastname" placeholder="Last Name">
-
+            <p class="textError" id="lNameError">Last Name cannot be empty</p>
+            
             <input type="mail" id="mail" name="email" placeholder="Email Address">
-
+            <p class="textError" id="mailError">Looks like this is not an email</p>
+           
             <input type="password" id="pw" name="password" placeholder="Password">
-          
-            <input type="submit" value="CLAIM YOUR FREE TRIAL">
+            <p class="textError" id="passwordError">Password cannot be empty</p>
+            
+            <input type="submit" value="CLAIM YOUR FREE TRIAL" >
             <p class="terms">By clicking the button, you are agreeing to our <span class="termsLink">Terms and Services</span></p>
           </form>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="script.js"></script>
 
   <footer>
     <p class="attribution">
